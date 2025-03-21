@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.service.NavigationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,5 @@ public class NavigationController {
     @PostMapping("move")
     public void move(@RequestParam(value = "forward", defaultValue = "true") boolean forward){
         navigationService.move(forward);
-
     }
 }
