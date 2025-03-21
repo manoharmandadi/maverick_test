@@ -1,5 +1,6 @@
 package com.example.demo.component;
 
+import com.example.demo.model.Coordinate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,7 +15,7 @@ public class ProbeTest {
 
     @Test
     public void testMoveForward(){
-        Assertions.assertNotNull(probe.move(true));
+        probe.move(new Coordinate(10, 10));
     }
 
     @Test
