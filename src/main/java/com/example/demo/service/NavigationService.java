@@ -5,7 +5,6 @@ import com.example.demo.model.Direction;
 
 public interface NavigationService {
 
-    Coordinate move(boolean forward);
+    Coordinate isNavigable(Coordinate coordinate, Direction direction, boolean forward);
 
-    Direction turn(boolean left);
 }
